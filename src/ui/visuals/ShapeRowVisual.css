@@ -1,0 +1,22 @@
+/* Musterreihe. Colours only from tokens.css; each colour is also named below its shape. */
+.visual-shaperow .sr-shape { stroke: var(--ink); stroke-width: 2.5; stroke-linejoin: round; }
+.visual-shaperow .sr-shape--plain { fill: var(--fill-1); }
+.visual-shaperow .sr-shape--rot { fill: var(--c-rot); }
+.visual-shaperow .sr-shape--blau { fill: var(--c-blau); }
+.visual-shaperow .sr-shape--gelb { fill: var(--c-gelb); }
+.visual-shaperow .sr-shape--gruen { fill: var(--c-gruen); }
+.visual-shaperow .sr-shape--lila { fill: var(--c-lila); }
+.visual-shaperow .sr-shape--orange { fill: var(--c-orange); }
+.visual-shaperow .sr-empty {
+  fill: var(--surface);
+  stroke: var(--ink);
+  stroke-width: 2;
+  stroke-dasharray: 6 4;
+}
+.visual-shaperow .sr-mark { font-size: 24px; font-weight: 700; fill: var(--text); }
+.visual-shaperow .sr-word { font-size: 16px; fill: var(--text); }
+
+.visual-shaperow.visual--print .sr-shape { fill: var(--surface); }
+@media print {
+  .visual-shaperow .sr-shape { fill: var(--surface); }
+}

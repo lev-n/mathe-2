@@ -1,0 +1,24 @@
+/* Zwanzigerfeld, Hunderterfeld. Colours only from tokens.css; the second amount also differs by its ring. */
+.visual-field .fd-frame {
+  fill: var(--surface);
+  stroke: var(--grid-line);
+  stroke-width: 2;
+}
+.visual-field .fd-dot { stroke: var(--ink); stroke-width: 1.5; }
+.visual-field .fd-dot--filled { fill: var(--c-blau); }
+.visual-field .fd-dot--second { fill: var(--fill-2); }
+.visual-field .fd-dot--empty { fill: var(--surface); stroke: var(--grid-line); }
+.visual-field .fd-ring { fill: var(--ink); }
+.visual-field .fd-split {
+  stroke: var(--ink);
+  stroke-width: 3;
+  stroke-dasharray: 8 5;
+  stroke-linecap: round;
+}
+
+.visual-field.visual--print .fd-dot--filled { fill: var(--ink); }
+.visual-field.visual--print .fd-dot--second { fill: var(--surface); }
+@media print {
+  .visual-field .fd-dot--filled { fill: var(--ink); }
+  .visual-field .fd-dot--second { fill: var(--surface); }
+}

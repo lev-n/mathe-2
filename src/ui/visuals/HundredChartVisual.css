@@ -1,0 +1,24 @@
+/* Hundertertafel. Colours only from tokens.css; a masked cell has a dashed outline. */
+.visual-hundred .hc-cell {
+  fill: var(--surface);
+  stroke: var(--grid-line);
+  stroke-width: 1;
+}
+.visual-hundred .hc-cell--masked { fill: var(--surface-2); stroke: var(--ink); stroke-dasharray: 3 2; }
+.visual-hundred .hc-num {
+  font-size: 16px;
+  fill: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.visual-hundred .hc-num--masked { font-weight: 700; }
+.visual-hundred--piece .hc-num { font-size: 24px; }
+.visual-hundred .hc-ring {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2;
+}
+
+.visual-hundred.visual--print .hc-cell { fill: var(--surface); stroke: var(--ink); }
+@media print {
+  .visual-hundred .hc-cell { fill: var(--surface); stroke: var(--ink); }
+}

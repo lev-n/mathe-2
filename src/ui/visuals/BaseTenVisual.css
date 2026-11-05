@@ -1,0 +1,14 @@
+/* Zehnerstangen und Einerwürfel. Colours only from tokens.css; 'dazu' also differs by its stripes, 'weg' by its cross. */
+.visual-baseten .bt-piece { stroke: var(--ink); stroke-width: 2; }
+.visual-baseten .bt-piece--first { fill: var(--fill-1); }
+.visual-baseten .bt-piece--second { fill: var(--fill-2); stroke-dasharray: 5 3; }
+.visual-baseten .bt-piece--crossed { fill: var(--surface); }
+.visual-baseten .bt-unit { stroke: var(--ink); stroke-width: 1; }
+.visual-baseten .bt-cross { stroke: var(--ink); stroke-width: 3; stroke-linecap: round; }
+
+.visual-baseten.visual--print .bt-piece--first,
+.visual-baseten.visual--print .bt-piece--second { fill: var(--surface); }
+@media print {
+  .visual-baseten .bt-piece--first,
+  .visual-baseten .bt-piece--second { fill: var(--surface); }
+}
